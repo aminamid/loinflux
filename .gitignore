@@ -1,0 +1,10 @@
+data*/*
+log/*
+tmp/*
+tmp.influxdb.conf
+*.pyc
+!.gitkeep
+influxd
+influxdb
+influxdb-benchmark
+influx
