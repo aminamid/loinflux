@@ -15,7 +15,7 @@ init.sh stop
 ### toml
 
 ```
-wget https://pypi.python.org/packages/source/t/toml/toml-0.7.0.tar.gz
+wget https://pypi.python.org/packages/source/t/toml/toml-0.9.0.tar.gz
 ```
 
 This toml library could not parse part of graphite plugin in influxdb default toml file
@@ -24,8 +24,9 @@ This toml library could not parse part of graphite plugin in influxdb default to
 ### influxdb
 
 ```
-wget http://s3.amazonaws.com/influxdb/influxdb-0.9.0_rc20-1.x86_64.rpm
-rpm2cpio influxdb-0.9.0_rc20-1.x86_64.rpm | cpio -id
+mkdir tmp; cd tmp 
+wget -O - http://s3.amazonaws.com/influxdb/influxdb-0.9.0_rc29-1.x86_64.rpm | rpm2cpio -  | cpio -id
+mv opt/influxdb/versions/0.9.0-rc20/in* ../0.9.0-rc29/
 ```
 
 ```
