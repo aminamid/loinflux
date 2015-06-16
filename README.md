@@ -27,7 +27,7 @@ This toml library could not parse part of graphite plugin in influxdb default to
 VER=0.9.0
 RC=rc32
 UPDATE=1
-mkdir ${VER}-${RC}
+cp -rp 090base ${VER}-${RC}
 rm -rf tmp
 mkdir tmp; cd tmp 
 mkdir ${VER}-${RC}
@@ -38,7 +38,9 @@ mv opt/influxdb/versions/${VER}-${RC}/in* ../${VER}-${RC}/
 ```
 VER=0.9.0
 UPDATE=1
-mkdir ${VER}
+cp -rp 090base ${VER}
+mkdir data${VER}
+ln -s data${VER} data
 rm -rf tmp
 mkdir tmp; cd tmp
 mkdir ${VER}
