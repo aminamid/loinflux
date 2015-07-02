@@ -32,7 +32,7 @@ abs_dirname() {
 }
 
 BASEDIR=$(abs_dirname "$0")
-BASEPORT=10000
+export BASEPORT=20000
 ${BASEDIR}/lib/init.py
 if [ ! -d ${BASEDIR}/log ]; then
     mkdir -p ${BASEDIR}/log
