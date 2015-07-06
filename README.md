@@ -36,7 +36,7 @@ mv opt/influxdb/versions/${VER}-${RC}/in* ../${VER}-${RC}/
 ```
 
 ```
-VER=0.9.0
+VER=0.9.1
 UPDATE=1
 cp -rp 090base ${VER}
 mkdir data${VER}

@@ -15,7 +15,7 @@ print cfg
 
 cfg["meta"]["dir"]=basedir+"/data/meta"
 cfg["meta"]["bind-address"]=":{0}".format(baseport+88)
-cfg["meta"]["reporting-disabled"]=False
+cfg["meta"]["reporting-disabled"]=True
 cfg["data"]["dir"]= basedir+"/data/db"
 cfg["admin"]["bind-address"]=":{0}".format(baseport+83)
 cfg["http"]["bind-address"]=":{0}".format(baseport+86)
